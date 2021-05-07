@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  user-select: none;
+}
+
+body::before {
+  content: "";
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  background-color: #ffb300;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav button {
+  font-size: 20px;
+  color: black;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+nav button * {
+  width: 30px;
+  height: 30px;
+}
+
+nav button:not(:last-child) {
+  margin-right: 5%;
+}
+
+nav ul {
+  margin-left: auto;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.image-slider,
+.intro {
+  flex: 1;
+  height: 100%;
+}
+
+/* Image slider styles below */
+.image-slider {
+  padding: 100px 10px 30px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-slider figure {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.image-slider .slider-info {
+  height: 20%;
+  background-color: #000;
+}
+
+.image-slider figure img {
+  width: 100%;
+}
+
+/* Intro section styles below */
+
+.intro {
+  padding: 100px 50px 30px 10px;
+}
+
+.intro > span {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #999;
+  color: white;
+  font-weight: bold;
+}
+
+.intro > h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  margin: 30px 0px 10px;
+}
+
+.intro > p {
+  font-size: 20px;
+  color: #999;
+  line-height: 1.5;
+  margin: 10px 0px 20px;
+}
+
+.intro #read-more-link {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.intro h3 {
+  margin: 100px 0px 20px;
+}
+
+.intro #read-more-link svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  /* fill: black; */
+}
+
+.intro form {
+  display: flex;
+  width: 100%;
+  box-shadow: -5px 5px 15px 10px #ddd;
+}
+
+.intro form input {
+  padding: 30px 20px;
+  width: 65%;
+  outline: none;
+  border: none;
+}
+
+.intro form button {
+  width: 35%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #ffb300;
+  font-size: 18px;
+  font-weight: bold;
+}
